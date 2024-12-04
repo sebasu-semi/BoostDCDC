@@ -1,0 +1,7 @@
+** sch_path: /home/sebasu/ISHI/OpenRule1umPDK_setupEDA/BoostDCDC/BoostDCDC_LVS.sch
+.subckt TOP Vo SW Vg GND
+*.PININFO Vo:O SW:I Vg:I GND:B
+M1 Vo Vo SW SW pchor1ex L=2u W=6.6u m=100
+M2 SW Vg GND GND nchor1ex L=2u W=4u m=100
+.ends
+.end
