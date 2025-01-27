@@ -43,20 +43,20 @@ N 400 -190 440 -190 {lab=#net1}
 N 300 -60 300 -50 {lab=GND}
 N 550 -190 630 -190 {lab=vo}
 N 630 -190 630 -140 {lab=vo}
-N 300 -30 620 -30 {lab=GND}
 N 110 -70 110 -30 {lab=GND}
 N 110 -30 300 -30 {lab=GND}
 N 110 -190 110 -130 {lab=vin}
 N 370 -240 370 -230 {lab=#net1}
 N 370 -240 420 -240 {lab=#net1}
+N 300 -30 620 -30 {lab=GND}
 C {xschem/symbols/OR1/primitives/nfet.sym} 280 -90 0 0 {name=M1 
 model=nchor1ex
-W=2u
-L=1u
+W=4u
+L=2u
 m=100}
 C {devices/ind.sym} 230 -190 3 1 {name=L1
 m=1
-value=3m
+value=100u
 footprint=1206
 device=inductor}
 C {devices/gnd.sym} 300 -20 0 0 {name=l2 lab=GND}
@@ -100,8 +100,8 @@ C {devices/lab_pin.sym} 240 -90 0 0 {name=p5 sig_type=std_logic lab=Vg}
 C {devices/ammeter.sym} 150 -190 3 0 {name=lin savecurrent=true spice_ignore=0}
 C {primitives/pfet.sym} 370 -210 3 1 {name=M2 
 model=pchor1ex
-W=3.3u
-L=1u
+W=6.6u
+L=2u
 m=100}
 C {devices/lab_pin.sym} 310 -190 3 1 {name=p6 sig_type=std_logic lab=SW}
 C {devices/res.sym} 630 -110 0 0 {name=R1
